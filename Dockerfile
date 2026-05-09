@@ -7,6 +7,8 @@ RUN mvn clean package -DskipTests
 
 FROM eclipse-temurin:17
 
+RUN apt-get update && apt-get install -y tesseract-ocr
+
 WORKDIR /app
 
 COPY --from=build /app/target/*.jar app.jar
