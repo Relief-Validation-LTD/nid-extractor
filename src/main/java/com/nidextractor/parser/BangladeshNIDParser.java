@@ -67,11 +67,11 @@ public class BangladeshNIDParser {
 
         // Mother — second Bengali candidate
         if (bengaliLines.size() > 1)
-            builder.motherNameBengali(bengaliLines.get(1));
+            builder.fatherNameBengali(bengaliLines.get(1));
 
         // Father — third Bengali candidate
         if (bengaliLines.size() > 2)
-            builder.fatherNameBengali(bengaliLines.get(2));
+            builder.motherNameBengali(bengaliLines.get(2));
 
         // English name — first English candidate
         if (!englishLines.isEmpty())
